@@ -13,9 +13,12 @@
   "modules-right": ["group/system", "group/tray", "pulseaudio", "network", "custom/power"],
 
 
-  "clock": {
-      "format": "{:%H:%M}",
-  },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a %d-%m-%Y}",
+        "tooltip-format": "<b>{}</b>\n<tt>{}</tt>",
+        "tooltip-format-alt": "<b>{}</b>\n<tt>{}</tt>"
+    },
 
 
 
