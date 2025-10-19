@@ -12,6 +12,8 @@ and here's the screenshot for the fullscreen
 ![Screenshot](Screenshots/fullscreen.png)
 
 note that you'll need these for the waybar to work
+
+
 -Btop (for the CPU)
 -Wofi (for the app menu)
 -Wlogout (for the power button to work)
