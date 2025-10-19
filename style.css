@@ -1,0 +1,204 @@
+* {
+border: none;
+border-radius: 0;
+font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+font-size: 13px;
+min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#waybar {
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 8px 12px 0 12px;
+}
+
+/* Workspaces */
+#workspaces {
+background-color: #000000;
+padding: 2;
+border: 1px solid #ffffff;
+border-radius: 9px;
+margin: 6px;
+}
+
+#workspaces button {
+padding: 0 10px;
+color: #666666;
+background-color: #000000;
+border-bottom: 2px solid transparent;
+transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+color: #ffffff;
+background-color: #1a1a1a;
+}
+
+#workspaces button.active {
+color: #ffffff;
+border-bottom: 2px solid #ffffff;
+}
+
+#workspaces button.urgent {
+color: #ff5555;
+}
+
+/* MPRIS (Media Player) */
+#mpris {
+padding: 0 15px;
+color: #ffffff;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 6px;
+}
+
+#custom-cava {
+padding: 0 15px;
+color: #ffffff;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 6px;
+}
+
+/* System Tray */
+#tray {
+padding: 0 16px;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 5px;
+}
+
+#tray > .passive {
+-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+-gtk-icon-effect: highlight;
+}
+
+/* System Group (CPU, Memory, Disk, Temp) */
+#cpu,
+#custom-updates,
+#memory,
+#disk,
+#temperature {
+padding: 0 7px;
+color: #ffffff;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 5px;
+}
+
+#cpu {
+color: #50fa7b;
+}
+
+#memory {
+color: #8be9fd;
+}
+
+#disk {
+color: #ffb86c;
+}
+
+#temperature {
+color: #ff79c6;
+}
+
+#temperature.critical {
+color: #ff5555;
+animation: blink 1s infinite;
+}
+
+/* Volume */
+#pulseaudio {
+padding: 0 10px;
+color: #ffffff;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 5px;
+}
+
+#clock {
+padding: 0 10px;
+color: #ffffff;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 5px;
+}
+
+#pulseaudio.muted {
+color: #666666;
+}
+
+/* Network */
+#network {
+padding: 0 16px;
+color: #ffffff;
+background-color: #000000;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 5px;
+}
+
+#network.disconnected {
+color: #ff5555;
+}
+
+
+#custom-swaync {
+padding: 0 10px;
+color: #ffffff;
+background-color: #000000;
+font-size: 16px;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 6px;
+}
+
+#custom-appmenu {
+padding: 0 10px;
+color: #ffffff;
+background-color: #000000;
+font-size: 16px;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 6px;
+}
+
+
+
+/* Power Menu */
+#custom-power {
+padding: 0 5px;
+color: #ff5555;
+background-color: #000000;
+font-size: 16px;
+border: 1px solid #ffffff;
+border-radius: 8px;
+margin: 5px;
+}
+
+#custom-power:hover {
+color: #ffffff;
+background-color: #ff5555;
+}
+
+/* Blink animation for critical temperature */
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
