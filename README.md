@@ -14,7 +14,7 @@ and here's the screenshot for the fullscreen
 note that you'll need these for the waybar to work
 
 
--Btop (for the CPU)
+**-Btop (for the CPU)
 
 -Wofi (for the app menu)
 
@@ -26,4 +26,4 @@ note that you'll need these for the waybar to work
 
 -alsamixer (for audio control over kitty also)
 
--nerd fonts
+-nerd fonts**
